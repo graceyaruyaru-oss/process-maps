@@ -15,7 +15,7 @@ Three processes from my work as Business Systems & Operations Manager at a whole
 Orders arrive through the customer EDI feed, are checked against stock, shipped (sometimes in several parts), and invoiced. The dotted boxes are where most problems started.
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[Retail customer sends order<br/>through EDI feed] --> B[Order entered and checked:<br/>price, quantity, ship date]
     B --> C{Enough stock?}
     C -- Yes --> D[Warehouse picks and packs]
@@ -65,7 +65,7 @@ flowchart TD
 A 3-4 month rollout for the whole company: 100+ account and credential entries reviewed, 10+ legacy computers, and scattered cloud resources.
 
 ```mermaid
-flowchart LR
+flowchart TD
     subgraph P1[1. Current state]
         A1[Inventory accounts,<br/>devices and subscriptions]
         A2[Find duplicate and<br/>obsolete subscriptions]
